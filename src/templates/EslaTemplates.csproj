@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageType>Template</PackageType>
+    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>Elsa.Templates</PackageId>
+    <Title> Esla Workflow Templates</Title>
+    <Description>Templates to use when creating an application for Elsa Workflow</Description>
+    <PackageTags>dotnet-new;tempaltes;elsa;elsa workflow</PackageTags>
+    
+    <TargetFramework>netstandard2.1</TargetFramework>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <!-- Supresses Warnings Not applicable to template package projects -->
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <!-- Ensures that files and folders that start with a . (like .gitignore) are part of the template -->
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>

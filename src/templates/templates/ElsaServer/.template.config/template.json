@@ -1,0 +1,13 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "classifications": ["Elsa", "WebAPI", "Workflows"],
+    "identity": "ElsaServer.Template.CSharp",
+    "name": "Elsa Server Web Application",
+    "preferNameDirectory": true,
+    "shortName": "elsa-server",
+    "sourceName": "ElsaServer",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    }
+}
