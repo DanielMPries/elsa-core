@@ -21,7 +21,7 @@ This project is a starter template for creating an [Elsa Dashboard](https://elsa
 
 ```
 
-Alternatively you can override the configuration path of `ElsaDashboard:ServerUrl` in `_Host.cshtml.cs`.
+Alternatively you can override the configuration path of `Elsa:ServerUrl` in `_Host.cshtml.cs`.
 
 ## Dependencies 
 
